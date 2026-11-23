@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Percorrer Arrays</title>
+</head>
+<body>
+    <h1>Percorrer Arrays</h1>
+    <div id="saida"></div>
+
+    <script>
+
+        let numeros =[10,20,30,40,50];
+        let saida = document.getElementById("saida");
+
+        // cada número, posição com for
+        saida.innerHTML += "<b>a) Números com posição (for):</b><br>";
+        for (let i = 0; i < numeros.length; i++) {
+            saida.innerHTML += "Posição " + i + ": " + numeros[i] + "<br>";
+        }
+
+        saida.innerHTML += "<br>";
+
+        // dobro de cada número com forEach
+        saida.innerHTML += "<b>b) Dobro de cada número (forEach):</b><br>";
+        numeros.forEach(function(numero) {
+            saida.innerHTML += "Dobro de " + numero + ": " + (numero * 2) + "<br>";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Acessando Arrays</title>
+</head>
+<body>
+    <h1>Cidades</h1>
+    <div id="saida"></div>
+
+    <script>
+        let cidades = ["SP", "RJ", "MG", "BA", "RS"];
+        let saida = document.getElementById("saida");
+
+        saida.innerHTML += "Primeiro item: " + cidades[0] + "<br>";
+
+        saida.innerHTML += "Último item: " + cidades[cidades.length - 1] + "<br>";
+
+        saida.innerHTML += "Total de itens: " + cidades.length + "<br>";
+
+        saida.innerHTML += "Item da posição 2: " + cidades[2] + "<br>";
+    </script>
+</body>
+</html>

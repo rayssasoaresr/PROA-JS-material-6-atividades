@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Push e Pop</title>
+</head>
+<body>
+    <h1>Push e Pop</h1>
+    <div id="saida"></div>
+
+    <script>
+        let frutas = ["maçã", "banana"];
+        let saida = document.getElementById("saida");
+
+        saida.innerHTML += "Inicial: " + frutas + "<br>";
+
+        // push = adiciona no FINAL
+        frutas.push("uva");
+        saida.innerHTML += "Depois push('uva'): " + frutas + "<br>";
+
+        frutas.push("laranja");
+        saida.innerHTML += "Depois push('laranja'): " + frutas + "<br>";
+
+        // pop = remove do FINAL
+        frutas.pop();
+        saida.innerHTML += "Depois pop(): " + frutas + "<br>";
+
+        frutas.pop();
+        saida.innerHTML += "Depois pop(): " + frutas + "<br>";
+    </script>
+</body>
+</html>

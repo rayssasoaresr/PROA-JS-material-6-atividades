@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Length</title>
+</head>
+<body>
+    <h1> Tamanho do Array</h1>
+    <div id="saida"></div>
+
+    <script>
+        let frutas = ["maçã", "banana", "uva", "laranja"];
+        let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        let saida = document.getElementById("saida");
+        saida.innerHTML += "Frutas: " + frutas + "<br>";
+        saida.innerHTML += "Total de frutas: " + frutas.length + "<br><br>";
+
+        saida.innerHTML += "Números: " + numeros + "<br>";
+        saida.innerHTML += "Total de números: " + numeros.length + "<br><br>";
+
+        // Último item sempre é length - 1
+        saida.innerHTML += "Última fruta: " + frutas[frutas.length - 1];
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>forEach</title>
+</head>
+<body>
+    <h1>Percorrendo com forEach</h1>
+    <div id="saida"></div>
+
+    <script>
+        let frutas = ["maçã", "banana", "uva", "laranja"];
+        let saida = document.getElementById("saida");
+
+        saida.innerHTML += "Array: " + frutas + "<br><br>";
+
+        frutas.forEach(function(fruta) {
+            saida.innerHTML += " " + fruta + "<br>";
+        });
+    </script>
+</body>
+</html>

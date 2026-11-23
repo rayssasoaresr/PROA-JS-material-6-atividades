@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>indexOf</title>
+</head>
+<body>
+    <h1> Encontrar Posição</h1>
+    <div id="saida"></div>
+
+    <script>
+        let frutas = ["maçã", "banana", "uva"];
+        let saida = document.getElementById("saida");
+
+        saida.innerHTML += "Array: " + frutas + "<br><br>";
+        saida.innerHTML += "Posição de 'banana': " + frutas.indexOf("banana") + "<br>";
+        saida.innerHTML += "Posição de 'uva': " + frutas.indexOf("uva") + "<br>";
+        saida.innerHTML += "Posição de 'abacaxi': " + frutas.indexOf("abacaxi");
+    </script>
+</body>
+</html>

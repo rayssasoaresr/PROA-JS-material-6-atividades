@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterando Arrays</title>
+</head>
+<body>
+    <h1>Alterando Cores</h1>
+    <div id="saida"></div>
+
+    <script>
+        let cores = ["azul", "verde", "vermelho"];
+        let saida = document.getElementById("saida");
+
+        // c- array antes
+        saida.innerHTML += "Antes: " + cores + "<br>";
+
+        // a - troca verde p1 por amarelo
+        cores[ 1 ] = "amarelo";
+
+        // b - coloca roxo na p3
+        cores[ 3 ] = "roxo";
+
+        // c - array depois
+        saida.innerHTML += "Depois: " + cores + "<br>";
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterando Arrays</title>
+</head>
+<body>
+    <h1> Alterando Valores</h1>
+    <div id="saida"></div>
+
+    <script>
+        let frutas = ["maçã", "banana", "uva"];
+        let saida = document.getElementById("saida");
+
+        saida.innerHTML += "Antes: " + frutas + "<br>";
+
+        frutas[1] = "morango";
+
+        saida.innerHTML += "Depois: " + frutas;
+    </script>
+</body>
+</html>

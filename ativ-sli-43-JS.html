@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 6 - Lista de Produtos</title>
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+    <div id="saida"></div>
+
+    <script>
+        let produtos = ["Teclado", "Mouse", "Monitor", "Notebook", "Impressora"];
+        let saida = document.getElementById("saida");
+
+        saida.innerHTML += "Array inicial: " + produtos + "<br>";
+
+        let posicaoNotebook = produtos.indexOf("Notebook");
+        saida.innerHTML += "a) Posição de Notebook: " + posicaoNotebook + "<br>";
+        console.log("Posição de Notebook:", posicaoNotebook);
+
+        let novosProdutos = produtos.slice(0, 3);
+        saida.innerHTML += "b) Novo array (slice): " + novosProdutos + "<br>";
+        console.log("Novo array (slice):", novosProdutos);
+
+        produtos.splice(1, 2);
+
+        produtos.splice(1, 0, "Webcam");
+
+        console.log("Array final:", produtos);
+    </script>
+</body>
+</html>

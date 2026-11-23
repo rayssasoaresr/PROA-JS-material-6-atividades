@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar e Remover</title>
+</head>
+<body>
+    <h1>Adicionar e Remover</h1>
+    <div id="saida"></div>
+
+    <script>
+        let numeros = [ 10, 20, 30 ] ;
+        let saida = document.getElementById("saida");
+
+        saida.innerHTML += "Inicial: " + numeros + "<br>";
+
+        // a - 40 no final com push
+        numeros.push(40);
+        saida.innerHTML += "a) Depois do push(40): " + numeros + "<br>";
+
+        // b - 5 no início com unshift
+        numeros.unshift(5);
+        saida.innerHTML += "b) Depois do unshift(5): " + numeros + "<br>";
+
+        // c - removido o último com pop
+        numeros.pop();
+        saida.innerHTML += "c) Depois do pop(): " + numeros + "<br>";
+
+        // d - Removido o primeiro com shift
+        numeros.shift();
+        saida.innerHTML += "d) Depois do shift(): " + numeros + "<br>";
+    </script>
+</body>
+</html>

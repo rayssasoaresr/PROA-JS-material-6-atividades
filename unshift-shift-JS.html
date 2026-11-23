@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Unshift e Shift</title>
+</head>
+<body>
+    <h1> Unshift e Shift</h1>
+    <div id="saida"></div>
+
+    <script>
+        let frutas = ["banana", "uva"];
+        let saida = document.getElementById("saida");
+
+        saida.innerHTML += "Inicial: " + frutas + "<br>";
+
+        // unshift = adiciona no INÍCIO
+        frutas.unshift("maçã");
+        saida.innerHTML += "Depois unshift('maçã'): " + frutas + "<br>";
+
+        frutas.unshift("morango");
+        saida.innerHTML += "Depois unshift('morango'): " + frutas + "<br>";
+
+        // shift = remove do INÍCIO
+        frutas.shift();
+        saida.innerHTML += "Depois shift(): " + frutas + "<br>";
+
+        frutas.shift();
+        saida.innerHTML += "Depois shift(): " + frutas + "<br>";
+    </script>
+</body>
+</html>

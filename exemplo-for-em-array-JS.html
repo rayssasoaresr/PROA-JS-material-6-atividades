@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>For em Array</title>
+</head>
+<body>
+    <h1> Percorrendo com for</h1>
+    <div id="saida"></div>
+
+    <script>
+        let frutas = ["maçã", "banana", "uva", "laranja"];
+        let saida = document.getElementById("saida");
+
+        saida.innerHTML += "Array: " + frutas + "<br><br>";
+
+        for (let i = 0; i < frutas.length; i++) {
+            saida.innerHTML += "Posição " + i + ": " + frutas[i] + "<br>";
+        }
+    </script>
+</body>
+</html>
